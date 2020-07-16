@@ -4,8 +4,15 @@ Returns: an integer
 '''
 def single_number(arr):
     # Your code here
+    # sort the array
+    # arr.sort()
 
-    pass
+# look for a skip in pairs
+#   for i in range(0, len(arr), 2):
+#       if arr[i] is not arr[i + 1]:
+#           return arr[i]
+  return 2 * sum(set(arr)) - sum(arr)
+    
 
 
 if __name__ == '__main__':
